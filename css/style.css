@@ -1,3 +1,32 @@
 @import url(reset.css);
 
 /* https://www.figma.com/file/PZzcrbb56XFWwTA6hnZzOP/My-Portfolio-(Community)?node-id=0%3A1&t=E3EJWbPdRcYHbXvK-0 */
+
+body {
+    background-color: #000;
+}
+/* header */
+.header-navbar {
+    border-bottom: 3px solid #fff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.border {
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    outline: 2px solid #fff;
+    border-radius: 40%;
+}
+.border .ball {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 25px;
+    height: 19px;    
+    transition: .3s ease-in;
+    transform: translateX(0);
+}
+
+/* main */
