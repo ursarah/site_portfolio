@@ -8,10 +8,10 @@
     text-decoration: none;
     list-style: none;
     /* outline: 1px solid red; */
-    outline-offset: -1px;
 }
 .header-navbar {
-    background-color: #10002B;
+    background-color: #10002B;    
+    border-bottom: 1px solid #fff;
 }
 header {
     font-family: 'Poppins', sans-serif;
@@ -34,13 +34,4 @@ span {
 /* main */
 main {
     background-color: #10002B;
-}
-.home {
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.home div {
-    text-align: center;
 }

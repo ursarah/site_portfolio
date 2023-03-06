@@ -1,12 +1,10 @@
 @import url(reset.css);
 
 /*header*/
-body.active {
-    background-color: #fff;
-}
+
 .active .header-navbar {
     background-color: #E0AAFF;
-    border-bottom: 3px solid #000;
+    border-bottom: 1px solid #000;
 }
 .active .header-navbar h2 {
     color: #000;
@@ -25,4 +23,9 @@ body.active {
     transition: .3s ease-in;
     background-color: #5A189A;
     transform: translateX(25px);
+}
+
+/* main */
+.active main {
+    background-color: #E0AAFF;
 }

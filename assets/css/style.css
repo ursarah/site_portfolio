@@ -6,9 +6,7 @@ body {
     background-color: #000;
 }
 /* header */
-.header-navbar {
-    border-bottom: 3px solid #fff;
-}
+
 .menu {
     display: flex;
     align-items: center;
@@ -21,7 +19,7 @@ body {
     border-radius: 40%;
 }
 .border .ball {
-    background-color: #fff;
+    background-color: #E0AAFF;
     border-radius: 100%;
     width: 25px;
     height: 19px;    
@@ -30,3 +28,16 @@ body {
 }
 
 /* main */
+.home {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px auto;
+}
+.home div {
+    text-align: center;
+}
+.home .image img {
+    border-radius: 100%;
+}
