@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@300;500&display=swap');
+:root{
+    --
+}
 
 *{
     margin: 0;
@@ -9,6 +12,9 @@
     /* outline: 1px solid red; */
     outline-offset: -1px;
 }
+.header-navbar {
+    background-color: #C77DFF;
+}
 header {
     font-family: 'Poppins', sans-serif;
 }
@@ -17,5 +23,11 @@ header div h1 {
     text-align: center;
 }
 header span {
+    color: #5A189A;
+}
+.navbar ul a{
+    color: #000;
+}
+.navbar ul a:hover{
     color: #5A189A;
 }
