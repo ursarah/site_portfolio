@@ -35,9 +35,12 @@ main {
 .aboutMe {
     background-color: #240046;
 }
-.home .title button,
+
 .home .title .link-cv {
     background-color: #E0AAFF;
 }
 
- 
+/* habilidades */
+.boxSkills {
+    background-color: #240046;
+}
