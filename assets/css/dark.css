@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@300;500&display=swap&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* outline: 1px solid red; */
+}
+.header-navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #240046;    
+}
+header div h2 {
+    color: #fff;
+}
+span {
+    color: #E0AAFF;
+}
+.navbar ul a {
+    color: #fff;
+}
+.navbar ul a:hover {
+    color: #5A189A;
+}
+
+/* main */
+main {
+    background-color: #10002B;
+    font-family: 'Roboto', sans-serif;
+}
+.aboutMe {
+    background-color: #240046;
+}
+.home .title button,
+.home .title .link-cv {
+    background-color: #E0AAFF;
+}
+
+ 

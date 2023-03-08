@@ -1,0 +1,47 @@
+@import url("dark.css");
+
+/*header*/
+.active span {
+    color: #7B2CBF;
+}
+.active .header-navbar {
+    background-color: #C77DFF;
+}
+.active .header-navbar h2,
+.active .navbar ul a,
+.active h1, 
+.active h2, 
+.active h5,
+.active p {
+    color: #000;
+}
+ 
+.active .navbar ul a:hover {
+    color: #5A189A;
+}
+
+.active .border {
+    outline: 2px solid #000;
+}
+.active .ball {
+    transition: .3s ease-in;
+    background-color: #240046;
+    transform: translateX(30px);
+}
+.active .ball #image {
+    transform: translateX(8px);
+    transition: .3s ease-in-out;
+}
+/* main */
+.active main {
+    background-color: #E0AAFF;
+}
+
+.active .title .link-cv, 
+.active .link-cv button{
+    color: #fff;
+    background-color: #10002B;
+}
+.active .aboutMe {
+    background-color: #C77DFF;
+}
