@@ -37,11 +37,14 @@
     background-color: #E0AAFF;
 }
 
-.active .title .link-cv, 
-.active .link-cv button{
+.active .title .link-cv {
     color: #fff;
     background-color: #10002B;
 }
 .active .aboutMe {
     background-color: #C77DFF;
+}
+.active .title .link-cv:hover {
+    color: #000;
+    outline: 1px solid #10002B;
 }
