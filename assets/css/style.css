@@ -1,4 +1,4 @@
-@import url("dark.css");
+@import url("reset.css");
 
 /* https://www.figma.com/file/PZzcrbb56XFWwTA6hnZzOP/My-Portfolio-(Community)?node-id=0%3A1&t=E3EJWbPdRcYHbXvK-0 */
 
@@ -8,6 +8,23 @@
 header div h2 {
     font-weight: 200;
     text-align: center;
+    color: var(--white);
+}
+.header-navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;   
+    position: fixed; 
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+span {
+    color: var(--purple6);
+}
+.navbar ul a {
+    color: var(--white);
+}
+.navbar ul a:hover {
+    color: var(--purple5);
 }
 .menu {
     display: flex;
@@ -18,14 +35,14 @@ header div h2 {
     cursor: pointer;
     width: 60px;
     height: 25px;
-    outline: 2px solid #fff;
+    outline: 2px solid var(--white);
     border-radius: 40%;
     margin-left: 50px;
 }
 .border .ball {
     display: flex;
     align-items: center;
-    background: #C77DFF;
+    background: var(--purple5);
     border-radius: 100%;
     width: 30px;
     height: 24px;    
@@ -35,26 +52,32 @@ header div h2 {
 .ball #image {
     transform: translateX(8px);
     transition: .3s ease-in-out;
-    color: #240046;
+    color: var(--purple2);
 }
 
 /* main */
+main {
+    background-color: var(--purple);
+    font-family: 'Roboto', sans-serif;
+}
 .home {
-    color: #fff;
+    color: var(--white);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
     padding: 100px 0;
 }
 .home .title {
     text-align: justify;
 }
-.home .image img {
+.image img {
     border-radius: 100%;
 }
 
 .home .title .link-cv{
     display: inline-block;
+    background-color: var(--purple6);
     margin-top: 20px;
     margin-right: 40px;
     width: 150px;
@@ -64,18 +87,22 @@ header div h2 {
     text-align: center;    
     transition: .3s ease-in-out;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 .home .title .link-cv:hover {
-    color: #fff;
+    color: var(--white);
     transform: scale(1.1);  
     transition: .3s ease-in-out;
     background-color: transparent;
-    outline: 1px solid #E0AAFF;
+    outline: 1px solid var(--purple6);
 }
 
 /* sobre mim */
+.aboutMe {
+    background-color: var(--purple2);
+    height: 100vh;
+}
 .description {
     max-width: 900px;
     margin: auto;
@@ -106,7 +133,8 @@ header div h2 {
     outline: 1px solid #E0AAFF;
     transition: .3s ease-in-out;
     border-radius: 5px 5px 0 0;
-    box-shadow: -1px 2px 2px 1px #ffffff71;
+    box-shadow: -1px 2px 2px 1px #ffffff71;    
+    background-color: #240046;
 }
 .boxSkills img {
     width: 30%;

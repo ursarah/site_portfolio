@@ -1,11 +1,12 @@
-@import url("dark.css");
+@import url("reset.css");
 
 /*header*/
 .active span {
-    color: #3C096C;
+    color: var(--purple3);
 }
 .active .header-navbar {
-    background-color: #C77DFF;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
 }
 .active .header-navbar h2,
 .active .navbar ul a,
@@ -13,19 +14,19 @@
 .active h2, 
 .active h5,
 .active p {
-    color: #000;
+    color: var(--black);
 }
  
 .active .navbar ul a:hover {
-    color: #5A189A;
+    color: var(--purple4);
 }
 
 .active .border {
-    outline: 2px solid #000;
+    outline: 2px solid var(--black);
 }
 .active .ball {
     transition: .3s ease-in;
-    background-color: #240046;
+    background-color: var(--purple2);
     transform: translateX(30px);
 }
 .active .ball #image {
@@ -34,17 +35,17 @@
 }
 /* main */
 .active main {
-    background-color: #E0AAFF;
+    background-color: var(--purple6);
 }
 
 .active .title .link-cv {
-    color: #fff;
-    background-color: #10002B;
+    color: var(--white);
+    background-color: var(--purple);
 }
 .active .aboutMe {
-    background-color: #C77DFF;
+    background-color: var(--purple5);
 }
 .active .title .link-cv:hover {
-    color: #000;
-    outline: 1px solid #10002B;
+    color: var(--black);
+    outline: 1px solid var(--purple);
 }

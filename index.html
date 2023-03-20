@@ -12,10 +12,13 @@
           
 
 
-
+    
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
     <script src="assets/js/darkTheme.js" defer></script>
     <script src="assets/js/skills.js" defer></script>
+    <script src="assets/js/nome.js" defer></script>
+    <script src="assets/js/eventHover.js" defer></script>
 </head>
 <body id="bg">
     <header class="header-navbar">
@@ -25,6 +28,7 @@
             </div>
             <div class="menu">
                 <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#description">Sobre mim</a></li>
                     <li class="nav-item"><a class="nav-link" href="#html">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Projetos</a></li>
@@ -40,9 +44,9 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="title">
-                <h1>Olá, sou <br><span>Sarah Costa Urcezino</span> ; )</h1>
+                <h1>Olá, sou <br><span class="write-name"></span> ; )</h1>
                 <h5>Desenvolvedora Front-End</h5>
                 <a class="link-cv" href="assets/image/Currículo - Sarah_1.pdf" download>Download CV</a>
                 <a class="link-cv" href="mailto:sarahurcezino@gmail.com" target="_blank">Entre em contato</a>
@@ -54,7 +58,7 @@
         
         <section class="aboutMe">
             <div class="description" id="description">
-                <h2><span>Sobre mim</span></h2>
+                <h2><span>Sobre mim</span></h2> 
                 <p>Olá meu nome é Sarah, tenho 25 anos e aqui nesse site se encontra uma pessoa alegre e disposta a sempre aprender cada vez mais. Tenho poucas experiências profissionais, mas aprendi bastante com cada uma delas. Hoje em dia estou começando o mundo da programação que foi onde me encontrei. Estou estudando HTML/CSS e JavaScript, tenho foco total em Frontend e construção de sites.</p>
             </div>
         </section>

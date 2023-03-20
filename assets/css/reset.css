@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@300;500&display=swap&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* outline: 1px solid red; */
+}
+:root {
+    --black: #000;
+    --white: #fff;
+    --purple: #10002B;
+    --purple2: #240046;
+    --purple3: #3C096C;
+    --purple4: #5A189A;
+    --purple5: #C77DFF;
+    --purple6: #E0AAFF;
+}
+
+
+
