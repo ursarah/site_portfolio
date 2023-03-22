@@ -1,6 +1,21 @@
+// navbar animated
+window.onscroll = () => {
+    let header = document.querySelector(".header-navbar")
+
+    header.classList.toggle("stick", window.scrollY > 100)
+}
 
 
+// write name
+let typed = new Typed(".write-name", {
+    strings: ["Sarah Costa Urcezino"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 50,
+    loop: false
+})
 
+// skills
 let skill = document.querySelector(".boxSkills")
 let tags = document.getElementById("habilidades")
 let itens = document.createElement("div")

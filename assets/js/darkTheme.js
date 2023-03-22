@@ -1,14 +1,15 @@
-let btn = document.getElementById("darkTheme")
+let btn = document.querySelector(".darkTheme")
 let backG = document.getElementById ("bg")
-let img = document.getElementById("image")
-btn.addEventListener("click", btnDark)
+let icon = document.querySelector(".ball-dark i")
 
-function btnDark(){
+btn.addEventListener("click", () => {
     backG.classList.toggle("active")
     if (backG.classList.contains("active")) {
-        img.src = "assets/image/darkLight/sol.svg"
+        icon.classList.remove("bxs-moon")
+        icon.classList.add("bxs-sun")
     }
     else {        
-        img.src = "assets/image/darkLight/lua.svg"
+        icon.classList.remove("bxs-sun")
+        icon.classList.add("bxs-moon")
     }
-}
+})

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/light.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
           
 
 
@@ -16,8 +16,7 @@
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
     <script src="assets/js/darkTheme.js" defer></script>
-    <script src="assets/js/skills.js" defer></script>
-    <script src="assets/js/nome.js" defer></script>
+    <script src="assets/js/html.js" defer></script>
     <script src="assets/js/eventHover.js" defer></script>
 </head>
 <body id="bg">
@@ -27,16 +26,16 @@
                 <h2><span>&lt;</span>Sarah <span>Ur.</span><span>/&gt;</span></h2>
             </div>
             <div class="menu">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#description">Sobre mim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#html">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Contatos</a></li>
-                </ul>
-                <div class="border" id="darkTheme">
-                    <div class="ball">
-                        <img id="image" src="assets/image/darkLight/lua.svg">
+                <div class="nav">
+                    <a class="nav-link link-ac" style="--i:1" href="#home">Home</a>
+                    <a class="nav-link" style="--i:2" href="#aboutMe">Sobre mim</a>
+                    <a class="nav-link" style="--i:3" href="#habilidades">Habilidades</a>
+                    <a class="nav-link" style="--i:4" href="">Projetos</a>
+                    <a class="nav-link" style="--i:5" href="">Contatos</a>
+                </div>
+                <div class="darkTheme" style="--i:6">
+                    <div class="ball-dark">
+                        <i class='bx bxs-moon' ></i>
                     </div>
                 </div>
             </div>
@@ -44,8 +43,8 @@
     </header>
 
     <main>
-        <section class="home" id="home">
-            <div class="title">
+        <section class="home fadeIn" id="home">
+            <div class="title-home">
                 <h1>Olá, sou <br><span class="write-name"></span> ; )</h1>
                 <h5>Desenvolvedora Front-End</h5>
                 <a class="link-cv" href="assets/image/Currículo - Sarah_1.pdf" download>Download CV</a>
@@ -56,19 +55,19 @@
             </div>
         </section>
         
-        <section class="aboutMe">
-            <div class="description" id="description">
+        <section class="aboutMe fadeIn"  id="aboutMe">
+            <div class="aboutMe-icon">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <div class="description">
                 <h2><span>Sobre mim</span></h2> 
                 <p>Olá meu nome é Sarah, tenho 25 anos e aqui nesse site se encontra uma pessoa alegre e disposta a sempre aprender cada vez mais. Tenho poucas experiências profissionais, mas aprendi bastante com cada uma delas. Hoje em dia estou começando o mundo da programação que foi onde me encontrei. Estou estudando HTML/CSS e JavaScript, tenho foco total em Frontend e construção de sites.</p>
             </div>
         </section>
 
-        <section>
-            <div class="description" id="habilidades">
-                <h2><span>Habilidades</span></h2>
-                
-
-            </div>
+        <section class="fadeIn habilidades" id="habilidades">
+            <h2><span>Habilidades</span></h2>
+            
         </section>
     </main>
 </body>

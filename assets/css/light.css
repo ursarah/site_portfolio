@@ -21,15 +21,16 @@
     color: var(--purple4);
 }
 
-.active .border {
+.active .darkTheme {
     outline: 2px solid var(--black);
 }
-.active .ball {
+.active .ball-dark {
     transition: .3s ease-in;
     background-color: var(--purple2);
     transform: translateX(30px);
 }
-.active .ball #image {
+.active .ball-dark i {
+    color: var(--purple5);
     transform: translateX(8px);
     transition: .3s ease-in-out;
 }
@@ -38,14 +39,14 @@
     background-color: var(--purple6);
 }
 
-.active .title .link-cv {
+.active .title-home a {
     color: var(--white);
     background-color: var(--purple);
 }
 .active .aboutMe {
     background-color: var(--purple5);
 }
-.active .title .link-cv:hover {
+.active .title-home a:hover {
     color: var(--black);
     outline: 1px solid var(--purple);
 }
