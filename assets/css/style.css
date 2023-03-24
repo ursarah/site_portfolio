@@ -211,6 +211,134 @@ main {
     transition: .2s ease-in-out;
 }
 
+/* Meus projetos */
+.project-port {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 7rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.project-box {
+    position: relative;
+    border-radius: 3rem;
+    padding: .2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.project-box img {
+    width: 100%;
+    transition: .4s ease;
+}
+
+.project-box:hover img:nth-child(0) {
+    transform: scale(1.1);
+}
+
+.project-box .text-car {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, var(--purple6), var(--purple5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.project-box:hover .text-car {
+    opacity: 1;
+}
+
+.text-car a {
+    width: 20%;
+    background-color: var(--purple3);
+    padding: .2rem;
+    align-self: center;
+    border: none;
+}
+
+.text-car a:hover {
+    background-color: var(--purple4);
+}
+
+/* Modal projects */
+.project-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    opacity: 0;
+    transform: scale(0);
+    z-index: -1000;    
+    transition: .7s ease;
+}
+
+.project-modal .modal-android {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--purple5);
+    width: 90%;    
+    border-radius: 10px 30px;  
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.modal-cont h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.modal-android .close {
+    position: absolute;
+    background-color: #bd0000;
+    color: #fff;
+    font-size: 1.4rem;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+    width: 40px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-android .modal-buttons a {
+    background-color: var(--purple3);
+    color: var(--white);
+    margin-right: 20px;
+    border-radius: 10px 30px;  
+    transition: .3s ease-in-out;
+}
+
+.modal-android .modal-buttons a:hover {
+    color: var(--black);
+    transform: scale(1.1);  
+    background-color: transparent;
+    outline: 1px solid var(--purple6);
+}
+
+.project-modal.active-modal {
+    opacity: 1;
+    z-index: 2000;
+    transform: scale(1);    
+}
 
 
 @keyframes top {

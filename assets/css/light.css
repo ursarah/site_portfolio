@@ -1,52 +1,52 @@
 @import url("reset.css");
 
 /*header*/
-.active span {
+.light span {
     color: var(--purple3);
 }
-.active .header-navbar {
+.light .header-navbar {
     background-color: transparent;
     backdrop-filter: blur(30px);
 }
-.active .header-navbar h2,
-.active .navbar ul a,
-.active h1, 
-.active h2, 
-.active h5,
-.active p {
+.light .header-navbar h2,
+.light .navbar ul a,
+.light h1, 
+.light h2, 
+.light h5,
+.light p {
     color: var(--black);
 }
  
-.active .navbar ul a:hover {
+.light .navbar ul a:hover {
     color: var(--purple4);
 }
 
-.active .darkTheme {
+.light .darkTheme {
     outline: 2px solid var(--black);
 }
-.active .ball-dark {
+.light .ball-dark {
     transition: .3s ease-in;
     background-color: var(--purple2);
     transform: translateX(30px);
 }
-.active .ball-dark i {
+.light .ball-dark i {
     color: var(--purple5);
     transform: translateX(8px);
     transition: .3s ease-in-out;
 }
 /* main */
-.active main {
+.light main {
     background-color: var(--purple6);
 }
 
-.active .title-home a {
+.light .title-home a {
     color: var(--white);
     background-color: var(--purple);
 }
-.active .aboutMe {
+.light .aboutMe {
     background-color: var(--purple5);
 }
-.active .title-home a:hover {
+.light .title-home a:hover {
     color: var(--black);
     outline: 1px solid var(--purple);
 }

@@ -18,6 +18,7 @@
     <script src="assets/js/darkTheme.js" defer></script>
     <script src="assets/js/html.js" defer></script>
     <script src="assets/js/eventHover.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
 </head>
 <body id="bg">
     <header class="header-navbar">
@@ -30,7 +31,7 @@
                     <a class="nav-link link-ac" style="--i:1" href="#home">Home</a>
                     <a class="nav-link" style="--i:2" href="#aboutMe">Sobre mim</a>
                     <a class="nav-link" style="--i:3" href="#habilidades">Habilidades</a>
-                    <a class="nav-link" style="--i:4" href="">Projetos</a>
+                    <a class="nav-link" style="--i:4" href="#projects">Projetos</a>
                     <a class="nav-link" style="--i:5" href="">Contatos</a>
                 </div>
                 <div class="darkTheme" style="--i:6">
@@ -66,8 +67,36 @@
         </section>
 
         <section class="fadeIn habilidades" id="habilidades">
-            <h2><span>Habilidades</span></h2>
-            
+            <h2><span>Habilidades</span></h2>            
+        </section>
+
+        <section class="projects" id="projects">
+            <h2><span>Meus Projetos</span></h2>
+            <div class="project-port">
+                <div class="project-box">
+                    <img src="assets/image/projects/site-android.jpg" alt="...">
+                    <div class="text-car">
+                        <h4>Site android</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi architecto ullam iusto voluptatem error unde vero cumque, sit repellat, rem, praesentium dignissimos sunt incidunt inventore perspiciatis quos molestiae tempora aut.
+                        </p>
+                    </div>
+                    <div class="project-modal" id="android">
+                        <div class="modal-android">
+                            <div class="close">X</div>
+                            <img src="assets/image/projects/site-android.jpg" alt="">
+                            <div class="modal-cont">
+                                <h2>Site Android</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti perspiciatis, ducimus nulla modi optio saepe exercitationem qui dolorum! Dolore laudantium atque ratione velit iste molestias voluptatum voluptatibus et itaque!</p>
+                            </div>
+                            <div class="modal-buttons">
+                                <a class="btn" href="">Projeto</a>
+                                <a class="btn" href="">Repositorio Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                    
+            </div>
         </section>
     </main>
 </body>
