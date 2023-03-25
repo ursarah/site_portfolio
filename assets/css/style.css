@@ -4,8 +4,6 @@
 
 
 /* header */
-
-
 .header-navbar {
     font-family: 'Poppins', sans-serif;
     background-color: var(--purple2);   
@@ -145,6 +143,8 @@ main {
     outline: 1px solid var(--purple6);
 }
 
+
+
 /* sobre mim */
 .aboutMe {
     display: flex;
@@ -211,7 +211,14 @@ main {
     transition: .2s ease-in-out;
 }
 
+
+
 /* Meus projetos */
+.projects {
+    background-color: var(--purple2);
+    padding-top: 5rem;
+}
+
 .project-port {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -235,7 +242,7 @@ main {
     transition: .4s ease;
 }
 
-.project-box:hover img:nth-child(0) {
+.project-box:hover img {
     transform: scale(1.1);
 }
 
@@ -254,23 +261,36 @@ main {
     transition: .4s ease;
 }
 
+.text-car h2 {
+    color: #346675;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.text-car i {
+    color: #346675;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
 .project-box:hover .text-car {
     opacity: 1;
 }
 
-.text-car a {
-    width: 20%;
-    background-color: var(--purple3);
-    padding: .2rem;
-    align-self: center;
-    border: none;
+.text-car .pjtVerMais {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: 1s ease;
+    background-color: var(--purple6);
 }
 
-.text-car a:hover {
-    background-color: var(--purple4);
-}
 
 /* Modal projects */
+.projects h2 {
+    text-align: center;
+}
+
 .project-modal {
     position: fixed;
     left: 0;
@@ -288,7 +308,7 @@ main {
     transition: .7s ease;
 }
 
-.project-modal .modal-android {
+.project-modal .main-modal {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,15 +317,16 @@ main {
     border-radius: 10px 30px;  
     margin: 0 auto;
     gap: 4rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .modal-cont h2 {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;    
+    color: #346675;
 }
 
-.modal-android .close {
+.main-modal .close {
     position: absolute;
     background-color: #bd0000;
     color: #fff;
@@ -319,7 +340,7 @@ main {
     cursor: pointer;
 }
 
-.modal-android .modal-buttons a {
+.main-modal .modal-buttons a {
     background-color: var(--purple3);
     color: var(--white);
     margin-right: 20px;
@@ -327,7 +348,7 @@ main {
     transition: .3s ease-in-out;
 }
 
-.modal-android .modal-buttons a:hover {
+.main-modal .modal-buttons a:hover {
     color: var(--black);
     transform: scale(1.1);  
     background-color: transparent;
