@@ -20,7 +20,7 @@ const modais = [
     <i class="devicon-css3-plain"></i>`},
 
     {id: "pjt-digital",
-    nomeImg: "digital-cadastro",
+    nomeImg: "drip-store",
     nomePjt: "Digital store email",
     linkPjt: "https://ursarah.github.io/projeto_adivinhe_numero/",
     linkRps: "https://github.com/ursarah/digital_store",
