@@ -11,17 +11,33 @@ projBox.classList.add("project-port")
 sec.appendChild(projBox)
 
 const modais = [
-    {id: "android",
+    {id: "pjt-android",
     nomeImg: "site-android",
     nomePjt: "Site android",
     linkPjt: "ursarah.github.io/site_android/",
-    linkRps: "https://github.com/ursarah/site_android"},
+    linkRps: "https://github.com/ursarah/site_android",
+    icon: `<i class="devicon-html5-plain"></i>
+    <i class="devicon-css3-plain"></i>`},
 
-    {id: "digital",
+    {id: "pjt-digital",
     nomeImg: "digital-cadastro",
-    nomePjt: "Site",
+    nomePjt: "Digital store email",
+    linkPjt: "https://ursarah.github.io/projeto_adivinhe_numero/",
+    linkRps: "https://github.com/ursarah/digital_store",
+    icon: `<i class="devicon-html5-plain"></i>
+    <i class="devicon-css3-plain"></i>
+    <i class="devicon-bootstrap-plain"></i>
+  `},
+
+    {id: "pjt-adivinhe",
+    nomeImg: "digital-cadastro",
+    nomePjt: "Adivinhe o numero",
     linkPjt: "https://ursarah.github.io/digital_store/html/email.html",
-    linkRps: "https://github.com/ursarah/digital_store"}
+    linkRps: "https://github.com/ursarah/digital_store",
+    icon: `<i class="devicon-html5-plain"></i>
+    <i class="devicon-css3-plain"></i>
+    <i class="devicon-bootstrap-plain"></i>
+  `}
 ]
 
 //forEach vai pecorrer uma array e adiciona uma função para cada elemento da array
@@ -35,8 +51,7 @@ modais.forEach((modal) => {
         <div class="text-car">
             <h2>${modal.nomePjt}</h2>
             <div class="projects-icons">                           
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-css3-plain"></i>  
+                  ${modal.icon}
             </div>
             <div class="pjtVerMais">
                 <button class="btn">Ver mais</button>
