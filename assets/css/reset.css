@@ -21,5 +21,22 @@
     --purple6: #E0AAFF;
 }
 
+.title-navbar h3 span {
+    color: var(--purple6);
+}
 
+main h2 {
+    font-size: 50px;
+    color: var(--purple6);
+}
 
+.title-navbar h3 {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--white);
+}
+
+.title-home h1 strong {
+    color: var(--purple5);
+}

@@ -15,13 +15,7 @@
 }
 
 .header-navbar h2 {
-    font-weight: 200;
-    text-align: center;
-    color: var(--white);
-}
-
-span {
-    color: var(--purple6);
+   
 }
 
 .navbar a {
@@ -166,6 +160,10 @@ main {
     color: var(--white);
 }
 
+.description h2 {
+    margin-bottom: 3.5rem;
+}
+
 .description p {
     text-align: justify;
     font-weight: 200;
@@ -175,16 +173,21 @@ main {
 
 
 /* habilidades */
+.habilidades {
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 .habilidades h2 {
-    padding-top: 5rem;
     text-align: center;
+    margin-bottom: 5rem;
 }
 .skill {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 7rem ;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 3rem ;
 }
 .boxSkills {
     display: flex;
@@ -237,12 +240,12 @@ main {
     align-items: center;
 }
 
-.project-box img {
+.project-box .imgProject {
     width: 100%;
     transition: .4s ease;
 }
 
-.project-box:hover img {
+.project-box:hover .imgProject {
     transform: scale(1.1);
 }
 
@@ -324,6 +327,10 @@ main {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;    
     color: #346675;
+}
+
+.main-modal img {
+    width: 100%;
 }
 
 .main-modal .close {

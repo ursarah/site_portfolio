@@ -1,36 +1,37 @@
-let modal = document.querySelector(".project-modal")
 
-let openModal = document.querySelectorAll(".text-car")
-openModal.forEach(open => {
-    open.addEventListener("click", () => {
-        modal.classList.add("active-modal")    
-    })
-})
-let closeModal = document.querySelectorAll(".close")
-closeModal.forEach(close => {
-    close.addEventListener("click", () => {
-        modal.classList.remove("active-modal")
-    })
-})
-
-
-// modais
 let sec = document.getElementById("projects")
-let proj = document.createElement("div")
-proj.classList.add("project-port")
-sec.appendChild(proj)
+
+//createElement cria uma tag html
+let projBox = document.createElement("div")
+
+//classlist adiciona ou remove uma classe
+projBox.classList.add("project-port")
+
+//appendChild adiciona um elemento em outro elemento
+sec.appendChild(projBox)
 
 const modais = [
-    {nomeImg: "site-android",
+    {id: "android",
+    nomeImg: "site-android",
     nomePjt: "Site android",
     linkPjt: "ursarah.github.io/site_android/",
-    linkRps: "https://github.com/ursarah/site_android"}
+    linkRps: "https://github.com/ursarah/site_android"},
+
+    {id: "digital",
+    nomeImg: "digital-cadastro",
+    nomePjt: "Site",
+    linkPjt: "https://ursarah.github.io/digital_store/html/email.html",
+    linkRps: "https://github.com/ursarah/digital_store"}
 ]
 
+//forEach vai pecorrer uma array e adiciona uma função para cada elemento da array
+//aqui ta adicionando em cada
 modais.forEach((modal) => {
-    proj.innerHTML = 
-    `<div class="project-box">
-        <img src="assets/image/projects/${modal.nomeImg}.jpg" alt="...">
+
+    // innerHTML adiciona elementos de texto no html
+    projBox.innerHTML += `
+    <div class="project-box">
+        <img class="imgProject" src="assets/image/projects/${modal.nomeImg}.jpg" alt="...">
         <div class="text-car">
             <h2>${modal.nomePjt}</h2>
             <div class="projects-icons">                           
@@ -41,7 +42,9 @@ modais.forEach((modal) => {
                 <button class="btn">Ver mais</button>
             </div>
         </div>
-        <div class="project-modal" id="android">
+
+        <!-- O modal que vai abrir -->
+        <div class="project-modal" id="${modal.id}">
             <div class="main-modal">
                 <div class="close">X</div>
                 <img src="assets/image/projects/${modal.nomeImg}.jpg" alt="">
@@ -50,10 +53,40 @@ modais.forEach((modal) => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti perspiciatis, ducimus nulla modi optio saepe exercitationem qui dolorum! Dolore laudantium atque ratione velit iste molestias voluptatum voluptatibus et itaque!</p>
                 </div>
                 <div class="modal-buttons">
-                    <a class="btn" href="${linkPjt}">Projeto</a>
-                    <a class="btn" href="${linkRps}">Repositorio Github</a>
+                    <a class="btn" href="${modal.linkPjt}" target="_blank">Projeto</a>
+                    <a class="btn" href="${modal.linkRps}" target="_blank">Repositorio Github</a>
                 </div>
             </div>
         </div>
-    </div>`
-})  
+        
+    </div>
+        `
+})
+
+    
+        
+// Dar evento de click pro text car para abrir um id especifico
+const eventClicks = document.querySelectorAll(`.text-car`)
+
+// o que vai aparecer
+const openModals = document.querySelectorAll(`.project-modal`)
+
+// Div do X d fechar modal
+const closeModals = document.querySelectorAll(".close")
+
+
+for(let i = 0; i <= openModals.length; i++){
+    // Abrir modais
+    eventClicks[i].addEventListener("click", ()=>{
+        openModals[i].classList.add("active-modal")
+    })        
+    
+    // Fechar modal
+    closeModals[i].addEventListener("click", () =>{
+        openModals[i].classList.remove("active-modal")   
+    })       
+}
+
+
+
+
