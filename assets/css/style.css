@@ -366,6 +366,18 @@ main {
     transition: 1s ease;
     background-color: var(--purple6);
 }
+/* Scroll animada project  */
+.project-port {
+    opacity: 0;
+    scale: 0;
+    transition: .8s ease;
+}
+
+.project-port.animatePjt {
+    opacity: 1;
+    scale: 1;
+}
+
 
 
 

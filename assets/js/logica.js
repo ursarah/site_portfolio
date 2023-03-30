@@ -3,7 +3,7 @@
 // Scroll
 const targets = document.querySelectorAll('[data-anime]')
 const targetSkills = document.querySelectorAll('[data-animeSkills]')
-const targetPjts = document.querySelectorAll('[data-animePjt]')
+const targetPjts = document.querySelectorAll('.project-port')
 
 
 function animeScroll () {
@@ -13,7 +13,7 @@ function animeScroll () {
 
     targets.forEach(target => {
         // offsettop da a distancia de um elemento para o top
-        if((windowTop) > target.offsetTop) {
+        if(windowTop > target.offsetTop) {
             target.classList.add('animate')
         }
         else{
@@ -23,7 +23,7 @@ function animeScroll () {
 
     targetSkills.forEach(targetSkill => {
         // offsettop da a distancia de um elemento para o top
-        if((windowTop) > targetSkill.offsetTop) {
+        if(windowTop > targetSkill.offsetTop) {
             targetSkill.classList.add('animateSkill')
         }
         else{
@@ -33,12 +33,13 @@ function animeScroll () {
 
     targetPjts.forEach(targetPjt => {
         // offsettop da a distancia de um elemento para o top
-        if((windowTop) > targetPjt.offsetTop) {
+        if(windowTop > targetPjt.offsetTop) {
             targetPjt.classList.add('animatePjt')
         }
         else{
-            targetPjt.classList.remove('animatePjt')      
-        }       
+            targetPjt.classList.remove('animatePjt')
+        }      
+              
     })
 }animeScroll()
 
