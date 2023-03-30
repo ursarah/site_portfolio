@@ -17,10 +17,11 @@
     
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
-    <script src="assets/js/darkTheme.js" defer></script>
     <script src="assets/js/html.js" defer></script>
+    <script src="assets/js/darkTheme.js" defer></script>
+    <script src="assets/js/logica.js" defer></script>
     <script src="assets/js/eventHover.js" defer></script>
-    <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/openCloseModal.js" defer></script>
 </head>
 <body id="bg">
     <header class="header-navbar">
@@ -52,12 +53,12 @@
                 <h5>Desenvolvedora Web</h5>
                 <a class="link-cv" href="assets/image/Currículo - Sarah_1.pdf" style="--i:1" download>Download CV</a>
                 <a class="link-cv" href="mailto:sarahurcezino@gmail.com" target="_blank" style="--i:2">Entre em contato</a>
-                <div class="social-icon">
-                    <a href="http://linkedin.com/in/sarah-costa-urcezino-644117197" target="_blank"><i class='bx bxl-linkedin' style="--i:1"></i></a>
-                    <a href="http://facebook.com/sarah.costa.1048" target="_blank"><i class='bx bxl-facebook-circle' style="--i:2"></i></a>
-                    <a href="https://instagram.com/sarah_ur" target="_blank"><i class='bx bxl-instagram-alt' style="--i:3"></i></a>
-                    <a href="https://twitter.com/sarah_ur" target="_blank"><i class='bx bxl-twitter' style="--i:4"></i></a>
-                    <a href="https://github.com/ursarah" target="_blank"><i class='bx bxl-github' style="--i:5"></i></a>
+                <div class="social-icon">                    
+                    <a href="https://github.com/ursarah" target="_blank"><i class='bx bxl-github' style="--i:1"></i></a>
+                    <a href="http://linkedin.com/in/sarah-costa-urcezino-644117197" target="_blank"><i class='bx bxl-linkedin' style="--i:2"></i></a>
+                    <a href="http://facebook.com/sarah.costa.1048" target="_blank"><i class='bx bxl-facebook-circle' style="--i:3"></i></a>
+                    <a href="https://instagram.com/sarah_ur" target="_blank"><i class='bx bxl-instagram-alt' style="--i:4"></i></a>
+                    <a href="https://twitter.com/sarah_ur" target="_blank"><i class='bx bxl-twitter' style="--i:5"></i></a>
                 </div>
             </div>
             <div class="image">
@@ -69,19 +70,18 @@
             <div class="aboutMe-icon" data-anime="left">
                 <i class='bx bx-code-alt'></i>
             </div>
-            <div class="description" data-anime="right">
-                <h2 data-anime="right">Sobre mim</h2> 
-                <p data-anime="right">Olá meu nome é Sarah, tenho 25 anos e aqui nesse site se encontra uma pessoa alegre e disposta a sempre aprender cada vez mais. Tenho poucas experiências profissionais, mas aprendi bastante com cada uma delas. Hoje em dia estou começando o mundo da programação que foi onde me encontrei. Estou estudando HTML/CSS e JavaScript, tenho foco total em Frontend e construção de sites.</p>
+            <div class="description">
+                <h2 data-anime="right" style="--i:1">Sobre mim</h2> 
+                <p data-anime="right" style="--i:2">Olá meu nome é Sarah, tenho 25 anos e aqui nesse site se encontra uma pessoa alegre e disposta a sempre aprender cada vez mais. Tenho poucas experiências profissionais, mas aprendi bastante com cada uma delas. Hoje em dia estou começando o mundo da programação que foi onde me encontrei. Estou estudando HTML/CSS e JavaScript, tenho foco total em Frontend e construção de sites.</p>
             </div>
         </section>
 
-        <section class="fadeIn habilidades" id="habilidades">
-            <h2>Habilidades</h2>            
+        <section class="habilidades" id="habilidades">
+            <h2 data-anime="zoom">Habilidades</h2>            
         </section>
 
         <section class="projects" id="projects">
-            <h2>Meus Projetos</h2>
-           
+            <h2 data-anime="zoom">Meus Projetos</h2>           
         </section>
     </main>
 </body>

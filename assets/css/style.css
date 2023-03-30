@@ -162,25 +162,6 @@ main {
 
 
 /* sobre mim */
-[data-anime] {
-    opacity: 0;
-    transition: .3s;
-}
-
-[data-anime].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-[data-anime="left"] {
-    transform: translate3d(-50px, 0, 0);
-}
-
-[data-anime="right"] {
-    transform: translate3d(50px, 0, 0);
-
-}
-
 .aboutMe {
     display: flex;
     justify-content: space-around;
@@ -203,13 +184,44 @@ main {
 
 .description h2 {
     margin-bottom: 3.5rem;
+    opacity: 0;
 }
 
 .description p {
     text-align: justify;
     font-weight: 200;
     width: 40vw;
+    opacity: 0;
 }
+
+/* Animado */
+[data-anime] {
+    opacity: 0;
+    transition: .7s ease;
+}
+
+[data-anime="left"] {
+    opacity: 0;
+    transform: translateX(-400%);
+}
+
+[data-anime="right"] {    
+    opacity: 0;
+    transform: translateX(400%); 
+}
+
+[data-anime="zoom"] {    
+    opacity: 0;
+    transform: scale(0); 
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translateX(0); 
+    transition: .3s ease;
+    transform: scale(1);
+}
+/* =========== */
 
 
 
@@ -219,10 +231,12 @@ main {
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
+
 .habilidades h2 {
     text-align: center;
     margin-bottom: 5rem;
 }
+
 .skill {
     display: grid;
     justify-items: center;
@@ -230,6 +244,7 @@ main {
     gap: 1rem;
     padding: 3rem ;
 }
+
 .boxSkills {
     display: flex;
     flex-direction: column;
@@ -238,25 +253,47 @@ main {
     background-color: var(--purple2);
     outline: 1px solid var(--purple4);
     border-radius: 5px 5px 0 0;
-    box-shadow: -1px 2px 2px 1px #ffffff71;    
-    transition: .2s ease-in-out;
+    box-shadow: -1px 2px 2px 1px #ffffff71;  
 }
+
 .boxSkills img {
     width: 30%;
 }
+
 .boxSkills h4 {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
     color: var(--white);
 }
-.boxSkills:hover {
-    transform: scale(.95);
-    transition: .2s ease-in-out;
-    box-shadow: 1px 1px 20px #fff;
+
+/* Animada skills  */
+[data-animeSkills] {
+    opacity: 0;
+    transition: .09s ease-in-out;
 }
 
+[data-animeSkills="leftScroll"] {
+    transform: translate3d(-50%, 0, 0);
+}
 
+[data-animeSkills="rightScroll"] {
+    transform: translate3d(50%, 0, 0);
+}
+
+[data-animeSkills].animateSkill {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;    
+    transition: .1s ease-in-out;
+    transition-delay: calc(.2s * var(--i));
+}
+
+[data-animeSkills].animateSkill:hover {
+    transform: scale(.95);
+    box-shadow: 1px 1px 20px #fff;
+    transition: .1s ease-in-out;
+}
+/* ========================== */
 
 /* Meus projetos */
 .projects {
@@ -437,6 +474,16 @@ main {
     }
     100%{
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftScroll {
+    0%{
+        transform: translate3d(-50px, 0, 0);
+    }
+    100%{
+        transform: translate3d(0);
         opacity: 1;
     }
 }
