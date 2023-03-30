@@ -1,19 +1,24 @@
-// Scroll
-const target = document.querySelectorAll('[data-anime]')
-const targetSkills = document.querySelectorAll('[data-animeSkills]')
 
-function animeScroll() {
+
+// Scroll
+const targets = document.querySelectorAll('[data-anime]')
+const targetSkills = document.querySelectorAll('[data-animeSkills]')
+const targetPjts = document.querySelectorAll('[data-animePjt]')
+
+
+function animeScroll () {
+
     // distacia do scroll pro top da tela com window
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4)
-    target.forEach(item => {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75)
+
+    targets.forEach(target => {
         // offsettop da a distancia de um elemento para o top
-        if((windowTop) > item.offsetTop) {
-            item.classList.add('animate')
+        if((windowTop) > target.offsetTop) {
+            target.classList.add('animate')
         }
         else{
-            item.classList.remove('animate')
+            target.classList.remove('animate')
         }
-       
     })
 
     targetSkills.forEach(targetSkill => {
@@ -24,15 +29,23 @@ function animeScroll() {
         else{
             targetSkill.classList.remove('animateSkill')
         }
-       
     })
-}
-animeScroll()
 
-if(target.length) {
+    targetPjts.forEach(targetPjt => {
+        // offsettop da a distancia de um elemento para o top
+        if((windowTop) > targetPjt.offsetTop) {
+            targetPjt.classList.add('animatePjt')
+        }
+        else{
+            targetPjt.classList.remove('animatePjt')      
+        }       
+    })
+}animeScroll()
+
+if(targets.length) {
     // adicionando evento a cada elemento que encontrar na pagina
     window.addEventListener('scroll', () => {
-        animeScroll()
+        animeScroll()     
     })
 }
 // ==============================================
@@ -53,3 +66,4 @@ let typed = new Typed(".write-name", {
     backDelay: 50,
     loop: false
 })
+

@@ -2,7 +2,6 @@
 
 /* https://www.figma.com/file/PZzcrbb56XFWwTA6hnZzOP/My-Portfolio-(Community)?node-id=0%3A1&t=E3EJWbPdRcYHbXvK-0 */
 
-
 /* header */
 .header-navbar {
     font-family: 'Poppins', sans-serif;
@@ -99,10 +98,6 @@ main {
     align-items: center;
     height: 100vh;
     padding: 100px 0;
-}
-
-.home .title-home{
-    text-align: justify;
 }
 
 .image img {
@@ -303,9 +298,9 @@ main {
 
 .project-port {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    padding: 7rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem;
     margin: 0 auto;
     position: relative;
 }
@@ -317,6 +312,11 @@ main {
     overflow: hidden;
     display: flex;
     align-items: center;
+}
+
+.project-box h3 {
+    color: #346675;
+    font-size: 2.5rem;
 }
 
 .project-box .imgProject {
@@ -368,6 +368,8 @@ main {
 }
 
 
+
+
 /* Modal projects */
 .projects h2 {
     text-align: center;
@@ -408,7 +410,7 @@ main {
     color: #346675;
 }
 
-.main-modal img {
+.main-modal video {
     width: 100%;
 }
 
@@ -448,7 +450,6 @@ main {
     transform: scale(1);    
 }
 
-
 @keyframes top {
     0%{
         transform: translateY(-100%);
@@ -474,16 +475,6 @@ main {
     }
     100%{
         transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes leftScroll {
-    0%{
-        transform: translate3d(-50px, 0, 0);
-    }
-    100%{
-        transform: translate3d(0);
         opacity: 1;
     }
 }
