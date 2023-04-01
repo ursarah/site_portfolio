@@ -61,71 +61,46 @@ const projectBs = [
     {nomePjt: "Site android",
     nomeImg: "site-android",
     icon: `<i class="devicon-html5-plain"></i>
-    <i class="devicon-css3-plain"></i>`},
+    <i class="devicon-css3-plain"></i>`,
+    delay: "1",},
 
     {nomePjt: "Faster",
     nomeImg: "faster",
     icon: `<i class="devicon-html5-plain"></i>
-    <i class="devicon-css3-plain"></i>`},
+    <i class="devicon-css3-plain"></i>`,
+    delay: "2",},
 
     {nomePjt: "Digital store email/login",
     nomeImg: "drip-store",
     icon: `<i class="devicon-html5-plain"></i>
     <i class="devicon-css3-plain"></i>
-    <i class="devicon-bootstrap-plain"></i>`},
+    <i class="devicon-bootstrap-plain"></i>`,
+    delay: "3",},
 
     {nomePjt: "Adivinhe o numero",
     nomeImg: "adivinhe-numero",
     icon: `<i class="devicon-html5-plain"></i>
     <i class="devicon-css3-plain"></i>
-    <i class="devicon-javascript-plain"></i>`},
+    <i class="devicon-javascript-plain"></i>`,
+    delay: "4",},
 
     {nomePjt: "Digital Burger",
     nomeImg: "digital-burger",
     icon: `<i class="devicon-html5-plain"></i>
     <i class="devicon-css3-plain"></i>
     <i class="devicon-bootstrap-plain"></i>
-    <i class="devicon-javascript-plain"></i>`}
+    <i class="devicon-javascript-plain"></i>`,
+    delay: "5",}
 ]
 
-const modais = [
-    {id: "pjt-android",
-    nomeVid: "video-mascote-android",
-    linkPjt: "https://ursarah.github.io/site_android/",
-    linkRps: "https://github.com/ursarah/site_android",
-    },
-    
-    {id: "pjt-faster",
-    nomeVid: "video-faster",
-    linkPjt: "https://ursarah.github.io/projeto_faster/",
-    linkRps: "https://github.com/ursarah/projeto_faster"
-    },
 
-    {id: "pjt-drip-store",
-    nomeVid: "video-drip-store",
-    linkPjt: "https://ursarah.github.io/digital_store/html/email.html",
-    linkRps: "https://github.com/ursarah/digital_store",
-    },
-
-    {id: "pjt-adivinhe",
-    nomeVid: "video-adivinhe-numero",
-    linkPjt: "https://ursarah.github.io/projeto_adivinhe_numero/",
-    linkRps: "https://github.com/ursarah/projeto_adivinhe_numero"
-    },
-
-    {id: "pjt-digital_burger",
-    nomeVid: "video-digital-burger",
-    linkPjt: "https://kevindik.github.io/digital_burger/",
-    linkRps: "https://github.com/KevinDik/digital_burger",
-    }
-]
 
 //forEach vai pecorrer uma array e adiciona uma função para cada elemento da array
 //aqui ta adicionando em cada
 projectBs.forEach(projectB => {
     // innerHTML adiciona elementos de texto no html
     projBox.innerHTML += `
-    <div class="project-box">
+    <div class="project-box" style="--i:${projectB.delay}">
         <img class="imgProject" src="assets/image/projects/${projectB.nomeImg}.png">
         <div class="text-car">
             <h3>${projectB.nomePjt}</h3>
@@ -142,20 +117,59 @@ projectBs.forEach(projectB => {
 
 
 // Modal 
-let secModal = document.querySelector("main")
+const modais = [
+    {id: "pjt-android",
+    nomePjt: "Site android",
+    nomeVid: "video-mascote-android",
+    linkPjt: "https://ursarah.github.io/site_android/",
+    linkRps: "https://github.com/ursarah/site_android",
+    },
+    
+    {id: "pjt-faster",
+    nomePjt: "Faster",  
+    nomeVid: "video-faster",
+    linkPjt: "https://ursarah.github.io/projeto_faster/",
+    linkRps: "https://github.com/ursarah/projeto_faster",
+    },
 
-// <!-- O modal que vai abrir -->
-//         <div class="project-modal" id="${modal.id}">
-//             <div class="main-modal">
-//                 <div class="close">X</div> 
-//                 <video src="assets/image/projects/${modal.nomeVid}.mp4" controls autoplay muted loop>Seu navegador não suporta vídeo</video>
-//                 <div class="modal-cont">
-//                     <h3>${modal.nomePjt}</h3>
-//                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti perspiciatis, ducimus nulla modi optio saepe exercitationem qui dolorum! Dolore laudantium atque ratione velit iste molestias voluptatum voluptatibus et itaque!</p>
-//                 </div>
-//                 <div class="modal-buttons">
-//                     <a class="btn" href="${modal.linkPjt}" target="_blank">Projeto</a>
-//                     <a class="btn" href="${modal.linkRps}" target="_blank">Repositorio Github</a>
-//                 </div>
-//             </div>
-//         </div> 
+    {id: "pjt-drip-store",
+    nomePjt: "Digital store email/login",
+    nomeVid: "video-drip-store",
+    linkPjt: "https://ursarah.github.io/digital_store/html/email.html",
+    linkRps: "https://github.com/ursarah/digital_store",
+    },
+
+    {id: "pjt-adivinhe",  
+    nomePjt: "Adivinhe o numero",
+    nomeVid: "video-adivinhe-numero",
+    linkPjt: "https://ursarah.github.io/projeto_adivinhe_numero/",
+    linkRps: "https://github.com/ursarah/projeto_adivinhe_numero",
+    },
+
+    {id: "pjt-digital_burger",
+    nomePjt: "Digital Burger",
+    nomeVid: "video-digital-burger",
+    linkPjt: "https://kevindik.github.io/digital_burger/",
+    linkRps: "https://github.com/KevinDik/digital_burger",
+    }
+]
+let main = document.querySelector("main")
+
+modais.forEach(modal => {
+    main.innerHTML += `
+    <!-- O modal que vai abrir -->
+        <div class="project-modal" id="${modal.id}">
+            <div class="main-modal">
+                <div class="close">X</div> 
+                <video src="assets/image/projects/${modal.nomeVid}.mp4" controls autoplay muted loop>Seu navegador não suporta vídeo</video>
+                <div class="modal-cont">
+                    <h3>${modal.nomePjt}</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti perspiciatis, ducimus nulla modi optio saepe exercitationem qui dolorum! Dolore laudantium atque ratione velit iste molestias voluptatum voluptatibus et itaque!</p>
+                </div>
+                <div class="modal-buttons">
+                    <a class="btn" href="${modal.linkPjt}" target="_blank">Projeto</a>
+                    <a class="btn" href="${modal.linkRps}" target="_blank">Repositorio Github</a>
+                </div>
+            </div>
+        </div> `
+})

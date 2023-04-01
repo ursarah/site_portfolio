@@ -229,7 +229,6 @@ main {
 
 .habilidades h2 {
     text-align: center;
-    margin-bottom: 5rem;
 }
 
 .skill {
@@ -366,8 +365,16 @@ main {
     transition: 1s ease;
     background-color: var(--purple6);
 }
+
+
 /* Scroll animada project  */
 .project-port {
+    opacity: 0;
+    scale: 0;
+    transition: .8s ease;
+}
+
+.project-port .project-box {
     opacity: 0;
     scale: 0;
     transition: .8s ease;
@@ -377,6 +384,14 @@ main {
     opacity: 1;
     scale: 1;
 }
+
+.project-port.animatePjt .project-box {
+    opacity: 1;
+    scale: 1;
+    transition-delay: calc(.3s * var(--i));
+}    
+
+
 
 
 

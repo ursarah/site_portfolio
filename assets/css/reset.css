@@ -27,7 +27,8 @@
 
 main h2 {
     font-size: 50px;
-    color: var(--purple6);
+    color: var(--purple6);    
+    margin-bottom: 5rem;
 }
 
 .title-navbar h3 {
