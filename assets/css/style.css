@@ -71,7 +71,7 @@
 .ball-dark i {
     color: var(--purple2);
     transform: translateX(8px);
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 /* navimada */
@@ -117,7 +117,7 @@ main {
     text-align: center;    
     text-decoration: none;
     color: var(--black);
-    transition: .3s ease-in-out;
+    transition: .3s ease;
     opacity: 0;
     animation: zoom 3s ease forwards;
     animation-delay: calc(.4s * var(--i));  
@@ -146,7 +146,7 @@ main {
     opacity: 0;
     animation: bottom 2s ease forwards;
     animation-delay: calc(.4s * var(--i));    
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 .social-icon i:hover {
     background-color: var(--purple6);
@@ -197,12 +197,12 @@ main {
 
 [data-anime="left"] {
     opacity: 0;
-    transform: translateX(-400%);
+    transform: translateX(-20%);
 }
 
 [data-anime="right"] {    
     opacity: 0;
-    transform: translateX(400%); 
+    transform: translateX(20%); 
 }
 
 [data-anime="zoom"] {    
@@ -263,29 +263,30 @@ main {
 
 /* Animada skills  */
 [data-animeSkills] {
-    opacity: 0;
-    transition: .09s ease-in-out;
+    opacity: 0;    
+    transition: .1s ease;
 }
 
 [data-animeSkills="leftScroll"] {
-    transform: translate3d(-50%, 0, 0);
-}
-
-[data-animeSkills="rightScroll"] {
     transform: translate3d(50%, 0, 0);
 }
 
+[data-animeSkills="rightScroll"] {
+    transform: translate3d(-50%, 0, 0);
+}
+
 [data-animeSkills].animateSkill {
-    transform: translate3d(0, 0, 0);
     opacity: 1;    
-    transition: .1s ease-in-out;
-    transition-delay: calc(.2s * var(--i));
+    transform: translate3d(0, 0, 0);
+    transition: .3s ease;
+    transition-delay: calc(.7s * var(--i));
 }
 
 [data-animeSkills].animateSkill:hover {
-    transform: scale(.95);
+    transform: scale(.9);
     box-shadow: 1px 1px 20px #fff;
-    transition: .1s ease-in-out;
+    transition: .3s ease;
+    z-index: 1;
 }
 /* ========================== */
 
@@ -460,7 +461,7 @@ main {
     color: var(--white);
     margin-right: 20px;
     border-radius: 10px 30px;  
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 .main-modal .modal-buttons a:hover {
@@ -479,7 +480,7 @@ main {
 
 @keyframes top {
     0%{
-        transform: translateY(-100%);
+        transform: translateY(-20%);
     }
     100%{
         transform: translateY(0);
@@ -488,7 +489,7 @@ main {
 
 @keyframes bottom {
     0%{
-        transform: translateY(100%);
+        transform: translateY(20%);
     }
     100%{
         opacity: 1;
@@ -498,7 +499,7 @@ main {
 
 @keyframes right {
     0%{
-        transform: translateX(100%);
+        transform: translateX(20%);
     }
     100%{
         transform: translateX(0);

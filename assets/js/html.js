@@ -8,33 +8,33 @@ const objetos = [
     {ling: "HTML 5",
     img: "html5-white",
     lado: "leftScroll",
-    delay: "3"},
+    delay: ".6"},
 
     {ling: "CSS 3",
     lado: "leftScroll",
     img: "css3-white",
     lado: "leftScroll",
-    delay: "2"},
+    delay: ".4"},
 
     {ling: "JavaScript",
     img: "javascript-white",
     lado: "leftScroll",
-    delay: "1"},
+    delay: ".2"},
 
     {ling: "Bootstrap",
     img: "bootstrap-white",
     lado: "rightScroll",
-    delay: "1"},
+    delay: ".1"},
 
     {ling: "Git",
     img: "git-white",
     lado: "rightScroll",
-    delay: "2"},
+    delay: ".3"},
 
     {ling: "Github",
     img: "github-white",
     lado: "rightScroll",
-    delay: "3"}
+    delay: ".5"}
 ]
 
 objetos.forEach((objeto) =>{
